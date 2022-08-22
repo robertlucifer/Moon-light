@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Sample Program</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a herf="#" class="logo">Logo</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">work</a></li>
+                <li><a href="#" class="hod">office</a></li>
+                <li><a href="#">family</a></li>
+            </ul>
+        </header>
+        <section>
+            
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="behind">
+            <h2 id="moon-light">Moon Light</h2>
+            <a href="#" id="button-to-explore">Explore</a>
+            <img src="mountains_front.png" id="front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Robert Antony</h2>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus alias aut tenetur ipsa pariatur, eligendi qui, libero, eum iste recusandae consequuntur rerum dolores harum ipsam magni velit doloribus magnam tempora.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur iusto distinctio suscipit fugit labore facere maiores, natus aperiam amet molestias? Illo, corrupti quam enim aliquam assumenda modi dolore necessitatibus sunt?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi distinctio iste fugit possimus iure quidem facilis illum suscipit reiciendis ratione natus, voluptates deserunt accusantium enim, eligendi, repellat consectetur totam odio.</P><br>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus alias aut tenetur ipsa pariatur, eligendi qui, libero, eum iste recusandae consequuntur rerum dolores harum ipsam magni velit doloribus magnam tempora.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur iusto distinctio suscipit fugit labore facere maiores, natus aperiam amet molestias? Illo, corrupti quam enim aliquam assumenda modi dolore necessitatibus sunt?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi distinctio iste fugit possimus iure quidem facilis illum suscipit reiciendis ratione natus, voluptates deserunt accusantium enim, eligendi, repellat consectetur totam odio.</P><br>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus alias aut tenetur ipsa pariatur, eligendi qui, libero, eum iste recusandae consequuntur rerum dolores harum ipsam magni velit doloribus magnam tempora.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur iusto distinctio suscipit fugit labore facere maiores, natus aperiam amet molestias? Illo, corrupti quam enim aliquam assumenda modi dolore necessitatibus sunt?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi distinctio iste fugit possimus iure quidem facilis illum suscipit reiciendis ratione natus, voluptates deserunt accusantium enim, eligendi, repellat consectetur totam odio.</P><br>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus alias aut tenetur ipsa pariatur, eligendi qui, libero, eum iste recusandae consequuntur rerum dolores harum ipsam magni velit doloribus magnam tempora.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur iusto distinctio suscipit fugit labore facere maiores, natus aperiam amet molestias? Illo, corrupti quam enim aliquam assumenda modi dolore necessitatibus sunt?
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi distinctio iste fugit possimus iure quidem facilis illum suscipit reiciendis ratione natus, voluptates deserunt accusantium enim, eligendi, repellat consectetur totam odio.</P><br>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus alias aut tenetur ipsa pariatur, eligendi qui, libero, eum iste recusandae consequuntur rerum dolores harum ipsam magni velit doloribus magnam tempora.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur iusto distinctio suscipit fugit labore facere maiores, natus aperiam amet molestias? Illo, corrupti quam enim aliquam assumenda modi dolore necessitatibus sunt?
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi distinctio iste fugit possimus iure quidem facilis illum suscipit reiciendis ratione natus, voluptates deserunt accusantium enim, eligendi, repellat consectetur totam odio.</P><br>
+                                                    
+            </div>
+           
+           
+           
+           
+           
+           
+           
+           <script>
+                let stars = document.getElementById('stars');
+                let moon = document.getElementById('moon');
+                let behind = document.getElementById('behind');
+                let txt = document.getElementById('moon-light');
+                let btn = document.getElementById('button-to-explore');
+                let front = document.getElementById('front');
+                let header = document.querySelector('header');
+                
+
+                window.addEventListener('scroll',function(){
+                    let value = window.scrollY;
+                    stars.style.left = value * 0.5 +'px';
+                    moon.style.top = value * 1.2 +'px';
+                    behind.style.top = value * 0.5 +'px';
+                    front.style.top = value * 0 +'px';
+                    txt.style.marginRight = value * 4 +'px';
+                    txt.style.marginTop = value * 1.5 +'px';
+                    btn.style.marginTop = value * 1.5 + 'px';
+                    header.style.top = value * 0.5 + 'px';
+                    })
+            </script>
+    </body>
+</html>
